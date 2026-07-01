@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* ----- Mobile header clean-up ----- */
+@media (max-width: 540px) {
+  .hdr {
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+    padding: 10px !important;
+  }
+  .hdr-left {
+    width: 100% !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+  .hdr-right {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap !important;
+  }
+  /* override inline logo size */
+  .hdr .logo {
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 12px !important;
+  }
+  /* this now applies because we added the class in App.js */
+  .hdr-badge {
+    font-size: 11px !important;
+    padding: 4px 8px !important;
+  }
+  .hdr-advance {
+    flex: 1 0 auto !important;
+  }
+  .hdr-company-inline {
+    display: none !important;
+  }
+  .company-strip {
+    font-size: 12px !important;
+    padding: 4px 8px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
